@@ -2,11 +2,13 @@
 <html>
 	<head>
 		<title>Bienvenida</title>
+		<link href="css/estilo_registro.css" type="text/css" rel="stylesheet">
 	</head>
 	<body>
 		<h1>Pagina de Inicio</h1>
 		<p>Bienvenidos a la pagina de registro UNAM</p>
 		<br/> <br/>
+<a href="login.php">Iniciar sesiòn</a>
 		<h2>Organizaciòn</h2>
 <p>bxcz hc diuh cdjc cudcubdv kj czhvx jkcv cvjhxc </p>
 		<h2>Misiòn</h2>
@@ -19,7 +21,7 @@
 	<li>jbiah uas</li>
 	<li>asidsa </li>
 </ul>
-<a href="registro.php">Registo</a>
+<a href="login.php">Registo</a>
 	</body>
 </html>
 	

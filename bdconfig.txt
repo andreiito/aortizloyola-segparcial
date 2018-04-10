@@ -11,7 +11,8 @@ contraseña varchar(20) not null);
 
 create table libros (id_libro serial primarey key,
 id_autor integer not null,
-añopublic date not null);
+añopublic date not null,
+titulo varchar(20) not null);
 
 create table autores (id_autor serial primary key,
 nombre varchar(20) not null,
@@ -29,3 +30,10 @@ grant select on usuarios to examen2;
 grant insert on autores to examen2;
 grant insert on libros to examen2;
 grant insert on usuarios to examen2;
+grant usage on libros_id_libro_sep to auser;
+grant usage on usuarios_id_usuario_sep to auser;
+grant usage on autores_id_autor_sep to auser;
+
+alter table usuarios owner to examen2;
+alter table libros owner to examen2;
+alter table autores owner to examen2;
