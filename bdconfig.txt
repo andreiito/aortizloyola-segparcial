@@ -1,0 +1,31 @@
+create user auser with encrypted password 'holamundo';
+create database segundoexamenbd;
+create user examen2 with encrypted password 'holamundo';
+
+create table usuarios (id_usuario serial primary key,
+nombre varchar(20) not null,
+apaterno varchar(32) not null,
+amaterno varchar(32) not null, 
+usuario varchar(20) not null, 
+contraseña varchar(20) not null);
+
+create table libros (id_libro serial primarey key,
+id_autor integer not null,
+añopublic date not null);
+
+create table autores (id_autor serial primary key,
+nombre varchar(20) not null,
+apaterno varchar(32) not null,
+amaterno varchar(32) not null,
+nacionalidad varchar(20) not null);
+
+
+grant insert on libros to auser;
+grant insert on autores to auser;
+grant insert on usuarios to auser;
+grant select on autores to examen2;
+grant select on libros to examen2;
+grant select on usuarios to examen2;
+grant insert on autores to examen2;
+grant insert on libros to examen2;
+grant insert on usuarios to examen2;
