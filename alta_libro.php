@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<?php include "filtro1.php" ?> 
+ 
+<?php 
+$_SESSION['pag']=1;
+
+include "filtro1.php";
+?>
 <html>
 	<head>
 		<title>Alta de Libro</title>
